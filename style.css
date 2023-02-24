@@ -1,0 +1,125 @@
+.slider{
+    /* width: 80%; */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.body{
+    margin-top: 10%;
+    height: 450px;
+    align-items: center;
+}
+
+#foto1{
+    z-index: 1;
+    position: absolute;
+}
+
+#f1{
+    transition: all 0.5s;
+    width: 100%; 
+    height: 400px;
+}
+
+#f2{
+    transition: all 0.5s;
+    width: 100%; 
+    height: 400px;
+}
+
+#f3{
+    transition: all 0.5s;
+    width: 100%; 
+    height: 400px;
+}
+
+#foto2{
+    filter: blur(10px);
+}
+
+#foto3{
+    filter: blur(10px);
+}
+
+.buttons{
+    margin-top: -400px;
+}
+
+#prev{
+    font-size: 50px;
+    background: transparent;
+    border: none;
+    transition: 0.3s;
+    position: absolute;
+    color: rgb(179, 176, 176);
+    left: 30px;
+    z-index: 1;
+}
+
+#prev:hover{
+    color: rgb(73, 72, 72);
+}
+
+#next{
+    font-size: 50px;
+    background: transparent;
+    border: none;
+    transition: 0.3s;
+    /* margin-left: 1200px; */
+    color: rgb(179, 176, 176);
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+}
+
+#next:hover{
+    color: rgb(73, 72, 72);
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid rgb(196, 190, 190);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    #f1{
+        width: 100%;
+        height: 200px;
+    }
+    #f2{
+        width: 100%;
+        height: 200px;
+    }
+    #f3{
+        width: 100%;
+        height: 200px;
+    }
+    .slider{
+        padding-top: 30%;
+    }
+    .circles{
+        padding-top: 35%;
+    }
+    #next{
+        padding-right: 10px;
+        right: 0px;
+    }
+    #prev{
+        padding-left: 10px;
+        left: 0px;
+    }
+   
+    
+
+    
+}
